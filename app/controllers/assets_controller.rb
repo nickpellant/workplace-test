@@ -5,6 +5,12 @@ class AssetsController < ApplicationController
 
   def create
     @asset = Asset.new(asset_params)
+
+    if @asset.save
+      redirect_to @asset
+    else
+      render :new
+    end
   end
 
   private
