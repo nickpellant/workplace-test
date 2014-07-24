@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140724142843) do
+ActiveRecord::Schema.define(version: 20140724143831) do
 
   create_table "assets", force: true do |t|
     t.string   "csv"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20140724142843) do
     t.integer  "value"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "asset_id"
   end
 
 end
