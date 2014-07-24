@@ -6,7 +6,6 @@ class CSVImportService
 
     processed_sales.each do |sale|
       time = "0#{sale[:time]}".insert(2, ':')
-      puts time
       sold_at = "#{sale[:date]} #{time}".to_datetime
       code, value = sale[:code], "#{sale[:value].to_i}00".to_i
 
