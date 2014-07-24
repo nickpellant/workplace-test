@@ -7,6 +7,8 @@ class AssetsController < ApplicationController
     @asset = Asset.new(asset_params)
 
     if @asset.save
+      CSVImportService.import(@asset)
+
       redirect_to @asset
     else
       render :new

@@ -19,6 +19,8 @@ gem 'carrierwave', '~> 0.10.0'
 # Use Simpleform for forms
 gem 'simple_form', '~> 3.0.2'
 
+gem 'smarter_csv', '~> 1.0.17', require: false
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
