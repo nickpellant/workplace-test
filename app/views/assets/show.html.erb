@@ -1,1 +1,13 @@
 <h1>Asset CSV Uploaded</h1>
+
+<% @asset.sales.each do |sale| %>
+<h2>Sale #<%= sale.id %></h2>
+
+<ul>
+  <li>
+    Sold at: <strong><%= sale.sold_at %></strong>
+    Code: <strong><%= sale.code %></strong>
+    Value: <strong><%= sale.value %></strong>
+  </li>
+</ul>
+<% end %>
