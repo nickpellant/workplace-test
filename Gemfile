@@ -16,6 +16,8 @@ gem 'therubyracer',  platforms: :ruby
 
 # Use CarrierWave for asset uploads
 gem 'carrierwave', '~> 0.10.0'
+# Use Simpleform for forms
+gem 'simple_form', '~> 3.0.2'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

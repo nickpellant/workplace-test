@@ -1,2 +1,6 @@
 <h1>Upload Asset CSV</h1>
 
+<%= simple_form_for @asset do |form| %>
+  <%= form.input :csv, as: :file %>
+  <%= form.button :submit %>
+<% end %>
