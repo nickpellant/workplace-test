@@ -18,8 +18,11 @@ gem 'therubyracer',  platforms: :ruby
 gem 'carrierwave', '~> 0.10.0'
 # Use Simpleform for forms
 gem 'simple_form', '~> 3.0.2'
-
+# CSV processing
 gem 'smarter_csv', '~> 1.0.17', require: false
+
+# Money formatting
+gem 'money-rails'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
